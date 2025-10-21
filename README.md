@@ -17,42 +17,6 @@ It automates the login functionality of the [nopCommerce Admin Demo](https://adm
 
 ---
 
-## 📂 Project Structure
-selenium-complete-pom-framework/
-│
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── base/
-│ │ │ │ └── BaseTest.java # Handles browser setup and teardown
-│ │ │ │
-│ │ │ ├── pages/
-│ │ │ │ └── Login.java # Page Object for the login page
-│ │ │ │
-│ │ │ └── utils/ # Reserved for utility/helper classes
-│ │ │
-│ │ └── resources/ # Configuration files or data (if needed)
-│ │
-│ ├── test/
-│ │ ├── java/
-│ │ │ └── tests/
-│ │ │ └── LoginTest.java # Test case class that extends BaseTest
-│ │ │
-│ │ └── resources/ # Test data (if needed)
-│ │
-│
-├── test-output/ # TestNG auto-generated reports
-│ ├── index.html # Main TestNG dashboard report
-│ ├── emailable-report.html # Summary report (email format)
-│ └── LoginSuite/LoginTest.html # Test class-specific report
-│
-├── pom.xml # Maven build configuration and dependencies
-├── testing.xml # TestNG suite file (defines which tests to run)
-└── README.md # Project documentation
-
-
----
-
 ## ⚙️ Core Files Description
 
 ### 🧩 1. BaseTest.java (`src/main/java/base/BaseTest.java`)
