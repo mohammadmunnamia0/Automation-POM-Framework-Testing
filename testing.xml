@@ -1,0 +1,10 @@
+<suite name="LoginSuite">
+	<test name="LoginTest">
+		<classes>
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+</suite>
+
+<!-- Our testng.xml file is a TestNG configuration file that defines how
+	your test should be grouped, executed, what should be run, what should be the suit etc. -->
