@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.Log;
+
 public class Login {
 	// step 1 = import the WebDriver
 	private WebDriver driver;
@@ -18,22 +20,27 @@ public class Login {
 	// constructor same name as class name without return type, when we will create
 	// a object of this login class that time this constructor pass the instance of
 	// the driver as a argument
+
 	public Login(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	// step 4 = Create the Test Functions
 	public void enterUserName(String username) {
+		Log.info("Entering Username...");
 		driver.findElement(userNameTextbox).clear();
 		driver.findElement(userNameTextbox).sendKeys(username);
 	}
 
 	public void enterPAssword(String password) {
+		Log.info("Entering Password...");
 		driver.findElement(userPasswordbox).clear();
 		driver.findElement(userPasswordbox).sendKeys(password);
 	}
 
 	public void clickLogin() {
+
+		Log.info("Clicking The Login Button...");
 		driver.findElement(loginButton).click();
 	}
 
